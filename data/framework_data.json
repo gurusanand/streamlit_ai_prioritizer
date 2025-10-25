@@ -1,0 +1,392 @@
+[
+    {
+        "category": "Strategic & Business",
+        "dimension": "Strategic Alignment",
+        "default_weight": 8,
+        "description": "Alignment with business strategy, digital transformation roadmap, and organizational priorities",
+        "scores": {
+            "1": "No strategic alignment",
+            "2": "Limited alignment with one business unit",
+            "3": "Moderate alignment with multiple units",
+            "4": "Strong alignment with corporate strategy",
+            "5": "Critical to strategic transformation"
+        }
+    },
+    {
+        "category": "Strategic & Business",
+        "dimension": "Time to Market",
+        "default_weight": 7,
+        "description": "Speed to production deployment and value realization",
+        "scores": {
+            "1": ">18 months",
+            "2": "12-18 months",
+            "3": "6-12 months",
+            "4": "3-6 months",
+            "5": "<3 months"
+        }
+    },
+    {
+        "category": "Strategic & Business",
+        "dimension": "ROI Potential",
+        "default_weight": 9,
+        "description": "Expected return on investment including payback period and NPV",
+        "scores": {
+            "1": "Negative or unclear ROI",
+            "2": "Payback >3 years, ROI <100%",
+            "3": "Payback 2-3 years, ROI 100-200%",
+            "4": "Payback 1-2 years, ROI 200-400%",
+            "5": "Payback <1 year, ROI >400%"
+        }
+    },
+    {
+        "category": "Strategic & Business",
+        "dimension": "Scalability & Reusability",
+        "default_weight": 7,
+        "description": "Potential to scale across business units, geographies, and reuse components",
+        "scores": {
+            "1": "Single use case, no scalability",
+            "2": "Limited to one department",
+            "3": "Can scale to multiple departments",
+            "4": "Can scale across business units",
+            "5": "Enterprise-wide platform capability"
+        }
+    },
+    {
+        "category": "Risk & Compliance",
+        "dimension": "AI Risk Level",
+        "default_weight": 9,
+        "description": "Model risk, algorithmic bias, explainability requirements, unintended consequences",
+        "scores": {
+            "1": "Critical risk (life/financial decisions)",
+            "2": "High risk (regulatory scrutiny)",
+            "3": "Moderate risk (some oversight needed)",
+            "4": "Low risk (decision support)",
+            "5": "Minimal risk (informational)"
+        }
+    },
+    {
+        "category": "Risk & Compliance",
+        "dimension": "Regulatory & Compliance Risk",
+        "default_weight": 10,
+        "description": "AML, KYC, GDPR, Basel III, model governance, explainability requirements",
+        "scores": {
+            "1": "High regulatory uncertainty",
+            "2": "Significant compliance requirements",
+            "3": "Moderate compliance overhead",
+            "4": "Standard compliance requirements",
+            "5": "Minimal compliance impact"
+        }
+    },
+    {
+        "category": "Risk & Compliance",
+        "dimension": "Data Privacy & Security",
+        "default_weight": 9,
+        "description": "PII handling, data encryption, access controls, breach risk",
+        "scores": {
+            "1": "Highly sensitive customer data",
+            "2": "Sensitive financial data",
+            "3": "Moderate sensitivity data",
+            "4": "Low sensitivity data",
+            "5": "Non-sensitive or anonymized data"
+        }
+    },
+    {
+        "category": "Risk & Compliance",
+        "dimension": "Operational Risk",
+        "default_weight": 8,
+        "description": "System downtime impact, error consequences, business continuity risk",
+        "scores": {
+            "1": "Critical operations, high downtime cost",
+            "2": "High impact on operations",
+            "3": "Moderate operational impact",
+            "4": "Low operational impact",
+            "5": "Minimal operational dependency"
+        }
+    },
+    {
+        "category": "Risk & Compliance",
+        "dimension": "Ethical & Fairness Considerations",
+        "default_weight": 8,
+        "description": "Algorithmic bias, fairness, discrimination risk, social impact",
+        "scores": {
+            "1": "High bias/discrimination risk",
+            "2": "Moderate bias concerns",
+            "3": "Some fairness considerations",
+            "4": "Low bias risk",
+            "5": "No ethical concerns"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Technical Complexity",
+        "default_weight": 7,
+        "description": "Algorithm sophistication, infrastructure requirements, integration complexity",
+        "scores": {
+            "1": "Cutting-edge AI/complex architecture",
+            "2": "Advanced ML with custom development",
+            "3": "Standard ML with some customization",
+            "4": "Basic ML or rule-based",
+            "5": "Simple automation or proven solution"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Data Readiness & Quality",
+        "default_weight": 9,
+        "description": "Data availability, quality, completeness, labeling requirements",
+        "scores": {
+            "1": "No data or extensive collection needed",
+            "2": "Significant data quality issues",
+            "3": "Moderate data preparation needed",
+            "4": "Good data with minor cleanup",
+            "5": "High-quality, readily available data"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Integration Complexity",
+        "default_weight": 7,
+        "description": "Legacy system integration, API availability, middleware requirements",
+        "scores": {
+            "1": "Complex legacy integration, no APIs",
+            "2": "Significant integration challenges",
+            "3": "Moderate integration effort",
+            "4": "Standard integration patterns",
+            "5": "Minimal integration or modern systems"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Infrastructure & Technology Readiness",
+        "default_weight": 6,
+        "description": "Computing resources, cloud readiness, MLOps maturity",
+        "scores": {
+            "1": "Major infrastructure upgrades needed",
+            "2": "Significant infrastructure gaps",
+            "3": "Moderate infrastructure investment",
+            "4": "Minor infrastructure needs",
+            "5": "Infrastructure ready"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Vendor/Technology Maturity",
+        "default_weight": 6,
+        "description": "Solution maturity, vendor stability, lock-in risk, support availability",
+        "scores": {
+            "1": "Experimental technology, high risk",
+            "2": "Early-stage vendor/technology",
+            "3": "Emerging but proven technology",
+            "4": "Established vendor/technology",
+            "5": "Market-leading mature solution"
+        }
+    },
+    {
+        "category": "Technical & Implementation",
+        "dimension": "Technical Debt & Maintainability",
+        "default_weight": 6,
+        "description": "Code quality, documentation, retraining needs, technical sustainability",
+        "scores": {
+            "1": "High technical debt, unsustainable",
+            "2": "Significant maintenance burden",
+            "3": "Moderate maintenance requirements",
+            "4": "Well-architected, manageable",
+            "5": "Low debt, highly maintainable"
+        }
+    },
+    {
+        "category": "Resource & Investment",
+        "dimension": "Total Investment Required",
+        "default_weight": 8,
+        "description": "CapEx, OpEx, licensing, infrastructure, training costs",
+        "scores": {
+            "1": ">$5M investment",
+            "2": "$2M-$5M investment",
+            "3": "$500K-$2M investment",
+            "4": "$100K-$500K investment",
+            "5": "<$100K investment"
+        }
+    },
+    {
+        "category": "Resource & Investment",
+        "dimension": "Resource Availability",
+        "default_weight": 7,
+        "description": "Internal team capacity, skills availability, external vendor availability",
+        "scores": {
+            "1": "No resources, extensive hiring needed",
+            "2": "Major resource gaps",
+            "3": "Moderate resource requirements",
+            "4": "Most resources available",
+            "5": "Resources fully available"
+        }
+    },
+    {
+        "category": "Resource & Investment",
+        "dimension": "Skills & Expertise Gap",
+        "default_weight": 7,
+        "description": "AI/ML expertise, domain knowledge, training requirements",
+        "scores": {
+            "1": "Critical skills gap, extensive training",
+            "2": "Significant skills development needed",
+            "3": "Moderate upskilling required",
+            "4": "Minor training needs",
+            "5": "Skills fully available"
+        }
+    },
+    {
+        "category": "Resource & Investment",
+        "dimension": "Ongoing Maintenance & Support Cost",
+        "default_weight": 6,
+        "description": "Model retraining, monitoring, support, infrastructure costs",
+        "scores": {
+            "1": "Very high ongoing costs (>40% of initial)",
+            "2": "High ongoing costs (30-40%)",
+            "3": "Moderate ongoing costs (20-30%)",
+            "4": "Low ongoing costs (10-20%)",
+            "5": "Minimal ongoing costs (<10%)"
+        }
+    },
+    {
+        "category": "Organizational & Change",
+        "dimension": "Organizational Readiness & Maturity",
+        "default_weight": 8,
+        "description": "AI maturity, change readiness, governance frameworks, cultural preparedness",
+        "scores": {
+            "1": "No AI experience, resistant culture",
+            "2": "Limited AI experience",
+            "3": "Moderate AI maturity",
+            "4": "Good AI foundation",
+            "5": "High AI maturity, strong culture"
+        }
+    },
+    {
+        "category": "Organizational & Change",
+        "dimension": "Stakeholder Alignment & Support",
+        "default_weight": 8,
+        "description": "Executive sponsorship, cross-functional buy-in, end-user support",
+        "scores": {
+            "1": "Strong resistance, no sponsorship",
+            "2": "Weak support, skepticism",
+            "3": "Moderate support with concerns",
+            "4": "Strong support from most stakeholders",
+            "5": "Universal executive and user support"
+        }
+    },
+    {
+        "category": "Organizational & Change",
+        "dimension": "Change Management Complexity",
+        "default_weight": 7,
+        "description": "Process redesign, user adoption, training requirements, cultural change",
+        "scores": {
+            "1": "Transformational change, high resistance",
+            "2": "Significant change required",
+            "3": "Moderate process/behavior changes",
+            "4": "Minor adjustments needed",
+            "5": "Minimal change, easy adoption"
+        }
+    },
+    {
+        "category": "Organizational & Change",
+        "dimension": "Employee Adoption & Resistance",
+        "default_weight": 7,
+        "description": "User acceptance, job security concerns, learning curve",
+        "scores": {
+            "1": "High resistance, job displacement fears",
+            "2": "Moderate resistance expected",
+            "3": "Some concerns but manageable",
+            "4": "General acceptance",
+            "5": "Enthusiastic adoption"
+        }
+    },
+    {
+        "category": "Human-in-Loop & Autonomy",
+        "dimension": "Autonomy Level Required",
+        "default_weight": 8,
+        "description": "Full automation vs human oversight requirements",
+        "scores": {
+            "1": "Full autonomy required (high risk)",
+            "2": "Mostly autonomous with alerts",
+            "3": "Augmented decision-making",
+            "4": "Decision support with human approval",
+            "5": "Full human-in-loop, AI advisory only"
+        }
+    },
+    {
+        "category": "Human-in-Loop & Autonomy",
+        "dimension": "Human-in-Loop Requirements",
+        "default_weight": 7,
+        "description": "Level of human oversight, approval workflows, exception handling",
+        "scores": {
+            "1": "No human oversight possible",
+            "2": "Minimal human intervention",
+            "3": "Periodic human review",
+            "4": "Continuous human monitoring",
+            "5": "Human approves all decisions"
+        }
+    },
+    {
+        "category": "Human-in-Loop & Autonomy",
+        "dimension": "Explainability & Transparency Needs",
+        "default_weight": 8,
+        "description": "Model interpretability, decision justification, audit trail requirements",
+        "scores": {
+            "1": "Black box acceptable, no explanation needed",
+            "2": "Limited explainability required",
+            "3": "Moderate explainability (internal audit)",
+            "4": "High explainability (regulatory)",
+            "5": "Complete transparency required"
+        }
+    },
+    {
+        "category": "Process & Operational",
+        "dimension": "Process Standardization Level",
+        "default_weight": 6,
+        "description": "Process consistency, rule-based nature, exception frequency",
+        "scores": {
+            "1": "Highly variable, judgment-intensive",
+            "2": "Some variability, multiple exceptions",
+            "3": "Moderate standardization",
+            "4": "Well-defined with few exceptions",
+            "5": "Highly standardized, rule-based"
+        }
+    },
+    {
+        "category": "Process & Operational",
+        "dimension": "Volume & Frequency",
+        "default_weight": 6,
+        "description": "Transaction volume, processing frequency, throughput requirements",
+        "scores": {
+            "1": "Low volume (<100/month)",
+            "2": "Moderate volume (100-1K/month)",
+            "3": "Medium volume (1K-10K/month)",
+            "4": "High volume (10K-100K/month)",
+            "5": "Very high volume (>100K/month)"
+        }
+    },
+    {
+        "category": "Process & Operational",
+        "dimension": "Process Criticality",
+        "default_weight": 7,
+        "description": "Business criticality, customer impact, error tolerance",
+        "scores": {
+            "1": "Mission-critical, no failure tolerance",
+            "2": "High criticality, low error tolerance",
+            "3": "Moderate criticality",
+            "4": "Low criticality, errors manageable",
+            "5": "Non-critical, high error tolerance"
+        }
+    },
+    {
+        "category": "Process & Operational",
+        "dimension": "Current Process Efficiency",
+        "default_weight": 5,
+        "description": "Baseline efficiency, automation opportunity, pain points",
+        "scores": {
+            "1": "Highly efficient, minimal improvement room",
+            "2": "Fairly efficient",
+            "3": "Moderate efficiency gaps",
+            "4": "Significant inefficiencies",
+            "5": "Highly inefficient, major pain points"
+        }
+    }
+]

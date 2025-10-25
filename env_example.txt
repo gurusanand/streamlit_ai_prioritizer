@@ -1,0 +1,12 @@
+# OpenAI API Configuration
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# Note: If you don't have an OpenAI API key, the app will still work
+# but will provide basic insights instead of AI-powered analysis.
+#
+# To use this file:
+# 1. Rename this file from env_example.txt to .env
+# 2. Replace sk-your-openai-api-key-here with your actual OpenAI API key
+# 3. Restart the application
+
